@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DUPRE: Data Utility Prediction</title>
+  <style>
+    /* Basic reset & layout */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #f8f9fa;
+      color: #212529;
+    }
+    header, footer {
+      background-color: #343a40;
+      color: #ffffff;
+      padding: 1em;
+    }
+    main {
+      padding: 2em;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2, h3, p {
+      margin: 0 0 1em;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    nav a {
+      margin-right: 1em;
+      color: #ffffff;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.5em 1em;
+      margin-top: 1em;
+      background-color: #007bff;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    .paper-details {
+      background-color: #ffffff;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      padding: 1em;
+      margin-top: 1em;
+    }
+    .footer-note {
+      text-align: center;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DUPRE: Data Utility Prediction for Efficient Data Valuation</h1>
+    <nav>
+      <!-- Add navigation links if needed -->
+      <!-- Example: <a href="index.html">Home</a> <a href="about.html">About</a> -->
+    </nav>
+  </header>
+
+  <main>
+    <h2>Data Utility Prediction for Efficient Data Valuation</h2>
+    <p>
+      <strong>DUPRE</strong> is an approach that estimates the potential utility of data 
+      in various machine learning scenarios, enabling more efficient data valuation 
+      and resource allocation. This work leverages 
+      <a href="https://gpytorch.ai/" target="_blank">GPyTorch</a> for scalable Gaussian Process modeling.
+    </p>
+
+    <div class="paper-details">
+      <h3>Abstract</h3>
+      <p>
+        <br><br>
+        &ldquo;Data valuation is increasingly used in machine learning (ML) to decide the fair compensation for data owners and identify valuable or harmful data for improving ML models. Cooperative game theory-based data valuation, such as Data Shapley, requires evaluating the data utility (e.g., validation accuracy) and retraining the ML model for multiple data subsets. While most existing works on efficient estimation of the Shapley values have focused on reducing the number of subsets to evaluate, our framework, \texttt{DUPRE}, takes an alternative yet complementary approach that reduces the cost per subset evaluation by predicting data utilities instead of evaluating them by model retraining. Specifically, given the evaluated data utilities of some data subsets, \texttt{DUPRE} fits a \emph{Gaussian process} (GP) regression model to predict the utility of every other data subset. Our key contribution lies in the design of our GP kernel based on the sliced Wasserstein distance between empirical data distributions. In particular, we show that the kernel is valid and positive semi-definite, encodes prior knowledge of similarities between different data subsets, and can be efficiently computed. We empirically verify that \texttt{DUPRE} introduces low prediction error and speeds up data valuation for various ML models, datasets, and utility functions.
+      </p>
+    </div>
+
+    <p>
+      For more details, check out the following:
+    </p>
+    <ul>
+      <li>
+        <strong>Preprint</strong>: 
+        <a href="https://example.com/dupre-paper" target="_blank">
+          DUPRE: Data Utility Prediction for Efficient Data Valuation
+        </a>
+        (arXiv or conference link if available)
+      </li>
+      <li>
+        <strong>Code Repository</strong>: 
+        <a href="https://github.com/kakaeriol/uncertainty_shapley" target="_blank">
+          github.com/kakaeriol/uncertainty_shapley
+        </a>
+      </li>
+    </ul>
+
+    <a class="btn" href="https://github.com/kakaeriol/uncertainty_shapley" target="_blank">
+      View Code on GitHub
+    </a>
+  </main>
+
+  <footer>
+    <p class="footer-note">
+      &copy; 2025 DUPRE Project. All rights reserved.
+    </p>
+  </footer>
+</body>
+</html>
