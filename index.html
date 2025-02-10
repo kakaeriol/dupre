@@ -63,49 +63,31 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>DUPRE: Data Utility Prediction for Efficient Data Valuation</h1>
-    <nav>
-      <!-- Add navigation links if needed -->
-      <!-- Example: <a href="index.html">Home</a> <a href="about.html">About</a> -->
-    </nav>
-  </header>
-
+  
   <main>
-    <h2>Data Utility Prediction for Efficient Data Valuation</h2>
     <p>
-      <strong>DUPRE</strong> is an approach that estimates the potential utility of data 
-      in various machine learning scenarios, enabling more efficient data valuation 
-      and resource allocation. This work leverages 
-      <a href="https://gpytorch.ai/" target="_blank">GPyTorch</a> for scalable Gaussian Process modeling.
+      <strong>DUPRE</strong> is an Framework that can determine each Data Owner value efficiency.
     </p>
 
     <div class="paper-details">
       <h3>Abstract</h3>
       <p>
-        <br><br>
         &ldquo;Data valuation is increasingly used in machine learning (ML) to decide the fair compensation for data owners and identify valuable or harmful data for improving ML models. Cooperative game theory-based data valuation, such as Data Shapley, requires evaluating the data utility (e.g., validation accuracy) and retraining the ML model for multiple data subsets. While most existing works on efficient estimation of the Shapley values have focused on reducing the number of subsets to evaluate, our framework, \texttt{DUPRE}, takes an alternative yet complementary approach that reduces the cost per subset evaluation by predicting data utilities instead of evaluating them by model retraining. Specifically, given the evaluated data utilities of some data subsets, \texttt{DUPRE} fits a \emph{Gaussian process} (GP) regression model to predict the utility of every other data subset. Our key contribution lies in the design of our GP kernel based on the sliced Wasserstein distance between empirical data distributions. In particular, we show that the kernel is valid and positive semi-definite, encodes prior knowledge of similarities between different data subsets, and can be efficiently computed. We empirically verify that \texttt{DUPRE} introduces low prediction error and speeds up data valuation for various ML models, datasets, and utility functions.
       </p>
     </div>
-
+    <figure style="text-align: center; margin: 2em 0;">
+        <!-- Replace with the actual path/filename of your image -->
+        <img src="./clear_dupre.pdf" alt="DUPRE Framework" style="max-width: 80%; height: auto;" />
+        <figcaption style="margin-top: 0.5em;">
+          <strong>Figure 1.</strong> Overview of the DUPRE framework.
+        </figcaption>
+      </figure>
     <p>
       For more details, check out the following:
     </p>
-    <ul>
-      <li>
-        <strong>Preprint</strong>: 
-        <a href="https://example.com/dupre-paper" target="_blank">
-          DUPRE: Data Utility Prediction for Efficient Data Valuation
-        </a>
-        (arXiv or conference link if available)
-      </li>
-      <li>
-        <strong>Code Repository</strong>: 
-        <a href="https://github.com/kakaeriol/uncertainty_shapley" target="_blank">
-          github.com/kakaeriol/uncertainty_shapley
-        </a>
-      </li>
-    </ul>
+    <a class="btn" href="https://github.com/kakaeriol/uncertainty_shapley" target="_blank">
+        View Preprint version
+      </a>
 
     <a class="btn" href="https://github.com/kakaeriol/uncertainty_shapley" target="_blank">
       View Code on GitHub
