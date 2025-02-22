@@ -75,8 +75,27 @@
     <div class="paper-details">
       <h3>Abstract</h3>
       <p>
-        &ldquo;Data valuation is increasingly used in machine learning (ML) to decide the fair compensation for data owners and identify valuable or harmful data for improving ML models. Cooperative game theory-based data valuation, such as Data Shapley, requires evaluating the data utility (e.g., validation accuracy) and retraining the ML model for multiple data subsets. While most existing works on efficient estimation of the Shapley values have focused on reducing the number of subsets to evaluate, our framework, \texttt{DUPRE}, takes an alternative yet complementary approach that reduces the cost per subset evaluation by predicting data utilities instead of evaluating them by model retraining. Specifically, given the evaluated data utilities of some data subsets, \texttt{DUPRE} fits a \emph{Gaussian process} (GP) regression model to predict the utility of every other data subset. Our key contribution lies in the design of our GP kernel based on the sliced Wasserstein distance between empirical data distributions. In particular, we show that the kernel is valid and positive semi-definite, encodes prior knowledge of similarities between different data subsets, and can be efficiently computed. We empirically verify that \texttt{DUPRE} introduces low prediction error and speeds up data valuation for various ML models, datasets, and utility functions.
-      </p>
+        &ldquo;Data valuation is increasingly used in machine learning (ML) to decide the fair compensation for data owners 
+        and identify valuable or harmful data for improving ML models. Cooperative game theory-based data valuation, 
+        such as Data Shapley, requires evaluating the data utility (e.g., validation accuracy) and retraining the ML model 
+        for multiple data subsets.
+        </p>
+        
+        <p>
+        While most existing works on efficient estimation of the Shapley values have focused on reducing the number of 
+        subsets to evaluate, our framework, <code>DUPRE</code>, takes an alternative yet complementary approach that reduces 
+        the cost per subset evaluation by predicting data utilities instead of evaluating them by model retraining. Specifically, 
+        given the evaluated data utilities of some data subsets, <code>DUPRE</code> fits a 
+        <em>Gaussian process</em> (GP) regression model to predict the utility of every other data subset.
+        </p>
+        
+        <p>
+        Our key contribution lies in the design of our GP kernel based on the sliced Wasserstein distance between empirical 
+        data distributions. In particular, we show that the kernel is valid and positive semi-definite, encodes prior knowledge 
+        of similarities between different data subsets, and can be efficiently computed. We empirically verify that 
+        <strong>DUPRE</strong> introduces low prediction error and speeds up data valuation for various ML models, datasets, 
+        and utility functions.
+        </p>
     </div>
     <figure style="text-align: center; margin: 2em 0;">
         <!-- Replace with the actual path/filename of your image -->
